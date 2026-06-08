@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 var routes = require('./Routes/routes');
 app.use('/api', routes);
-
- app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+var Port=process.env.PORT || 3000
+ app.listen(Port, () => {
+    console.log(`Server is running on port ${Port}`);
  });

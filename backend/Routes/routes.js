@@ -8,7 +8,6 @@ var { loginresponse } = require('../controllers/authentication/login');
 //routes
 var {auth} = require('../middleware/jwt');
 var {getdata} = require('../controllers/admin/admin');
-
 routes.get('/admin',auth,getdata)
 routes.post('/register', registerresponse);
 routes.post('/login', loginresponse);

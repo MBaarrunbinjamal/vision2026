@@ -7,7 +7,7 @@ var mongoserver = new MongoClient(process.env.MONGO_URL);
 var secretkey = process.env.SECRET_KEY;
 var bcrypt = require('bcrypt');
 
-var db = mongoserver.db("Vision2026");
+var db = mongoserver.db(process.env.DB_NAME);
 
 async function registerresponse(req, res) {
     var { username, email, password, confirmPassword } = req.body;
