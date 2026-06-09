@@ -48,7 +48,8 @@ async function registerresponse(req, res) {
         var result = await db.collection("Users").insertOne({
             username: username,
             email: email,
-            password: hashedPassword
+            password: hashedPassword,
+            Role:"User"
         });
 
         var token = jwt.sign(
