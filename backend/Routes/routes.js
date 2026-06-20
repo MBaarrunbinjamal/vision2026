@@ -7,9 +7,11 @@ var { loginresponse } = require('../controllers/authentication/login');
 var {auth} = require('../middleware/usermiddleware');
 var {getdata} = require('../controllers/admin/admin');
 var {adminauth} = require('../middleware/adminmiddleware');
+var {me} = require('../controllers/authentication/check');
 //routes
 
 routes.get('/admin',adminauth,getdata)
 routes.post('/register', registerresponse);
 routes.post('/login', loginresponse);
+routes.get('/me', me);
 module.exports = routes;

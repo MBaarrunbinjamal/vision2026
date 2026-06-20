@@ -66,7 +66,8 @@ async function registerresponse(req, res) {
         return res.status(201).json({
             success: true,
             message: "User registered successfully",
-            token: token
+            token: token,
+            Role:"User"
         });
 
     } catch (error) {

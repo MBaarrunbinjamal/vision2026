@@ -25,7 +25,7 @@ async function loginresponse(req, res) {
          return res.status(400).json({ error: "Invalid email or password" });
        }
        var token = jwt.sign({ id: user._id }, secretkey);
-       return res.json({ success: true, message: "Login successful", username: user.username, token });
+       return res.json({ success: true, message: "Login successful", username: user.username, token ,Role:user.Role});
      } catch (error) {
        return res.status(500).json({ error: error.message });
      } 
