@@ -9,6 +9,7 @@ import UserLayout from "./user/UserLayout";
 import Home from "./user/pages/Home";
 import AdminLayout from "./admin/AdminLayout";
 import Dashboard from "./admin/pages/Dashboard";
+import AuthGuard from './Authguard';
 
 function App() {
   useGlobalEffects(); 
@@ -17,7 +18,7 @@ function App() {
       <Token.Provider value={localStorage.getItem("token") || null}>
         <Cursor />
         <Routes>
-          <Route path="/admin" element={<AdminLayout><Dashboard /></AdminLayout>} />
+          <Route path="/admin" element={<AuthGuard role="Admin"><AdminLayout><Dashboard /></AdminLayout></AuthGuard>} />
           <Route path="/" element={<UserLayout><Home /></UserLayout>} />
           <Route path="/login" element={<UserLayout><Login /></UserLayout>} />
           <Route path="/register" element={<UserLayout><Register /></UserLayout>} />

@@ -25,7 +25,8 @@ const AuthGuard = ({ children, role }) => {
 
   if (loading) return <p>Loading...</p>;
   if (!user) return <Navigate to="/login" />;
-  if (role && user.role !== role) return <Navigate to="/" />;
+  if (role === 'Admin' && user.Role !== 'Admin') return <Navigate to="/" />;
+  if (role === 'User' && user.Role === 'Admin') return <Navigate to="/admin" />;
 
   return children;
 }
