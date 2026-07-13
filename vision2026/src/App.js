@@ -22,6 +22,7 @@ function App() {
           <Route path="/" element={<UserLayout><Home /></UserLayout>} />
           <Route path="/login" element={<UserLayout><Login /></UserLayout>} />
           <Route path="/register" element={<UserLayout><Register /></UserLayout>} />
+
         </Routes>
       </Token.Provider>
     </BrowserRouter>

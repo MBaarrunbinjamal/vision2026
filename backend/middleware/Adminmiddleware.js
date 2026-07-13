@@ -2,7 +2,7 @@ var jwt = require('jsonwebtoken');
 var {MongoClient,ObjectId} = require('mongodb');
 var cors = require('cors');
 require('dotenv').config()
-var mongoserver= new MongoClient(process.env.MONGO_URL)
+var mongoserver= new MongoClient(process.env.MONGO_URL )
 var secretkey=process.env.SECRET_KEY
 var db = process.env.DB_NAME
 // midileware for authentication
