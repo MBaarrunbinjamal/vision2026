@@ -9,7 +9,7 @@ function Sidebar() {
     <div className="logo-mark">
       <div className="logo-hex">NX</div>
       <div>
-        <div className="logo-text">NEXUS</div>
+        <div className="logo-text">NEXUSSS</div>
         <div className="logo-sub">ADMIN CONTROL</div>
       </div>
     </div>

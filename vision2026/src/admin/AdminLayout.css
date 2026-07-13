@@ -1,0 +1,12 @@
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-content {
+    flex: 1;
+    margin-left: 260px;   /* Change this to match your sidebar width */
+    margin-top: 70px;      /* Change this to match your navbar height */
+    padding: 20px;
+    overflow-y: auto;
+}

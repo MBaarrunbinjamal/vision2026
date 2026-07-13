@@ -5,7 +5,7 @@ var user = require('../controllers/users/User');
 var { registerresponse } = require('../controllers/authentication/register');
 var { loginresponse } = require('../controllers/authentication/login');
 var {auth} = require('../middleware/usermiddleware');
-var {getdata} = require('../controllers/admin/admin');
+var {getdata,addEvent} = require('../controllers/admin/admin');
 var {adminauth} = require('../middleware/adminmiddleware');
 var {me} = require('../controllers/authentication/check');
 //routes
@@ -14,4 +14,6 @@ routes.get('/admin',adminauth,getdata)
 routes.post('/register', registerresponse);
 routes.post('/login', loginresponse);
 routes.get('/me', me);
+routes.post('/addEvent', adminauth, addEvent);
+
 module.exports = routes;

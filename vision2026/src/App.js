@@ -10,6 +10,9 @@ import Home from "./user/pages/Home";
 import AdminLayout from "./admin/AdminLayout";
 import Dashboard from "./admin/pages/Dashboard";
 import AuthGuard from './Authguard';
+import AddEvent from './admin/pages/AddEvent';
+
+
 
 function App() {
   useGlobalEffects(); 
@@ -22,6 +25,7 @@ function App() {
           <Route path="/" element={<UserLayout><Home /></UserLayout>} />
           <Route path="/login" element={<UserLayout><Login /></UserLayout>} />
           <Route path="/register" element={<UserLayout><Register /></UserLayout>} />
+          <Route path="/addevent" element={<AuthGuard role="Admin"><AdminLayout><AddEvent /></AdminLayout></AuthGuard>} />
         </Routes>
       </Token.Provider>
     </BrowserRouter>
