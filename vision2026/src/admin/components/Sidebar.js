@@ -21,9 +21,9 @@ function Sidebar() {
     <div className="nav-group-label">COMMAND CENTER</div>
 
     <div className="nav-item">
-      <a href="#" className="nav-link-custom active">
+      <a href="/admin" className="nav-link-custom active">
         <i className="bi bi-grid-1x2 nav-icon"></i>
-        Dashboard
+        Dashboard 
       </a>
     </div>
     <div className="nav-item">

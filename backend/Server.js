@@ -4,7 +4,7 @@ var jwt = require('jsonwebtoken');
 var {MongoClient} = require('mongodb');
 var cors = require('cors');
 require('dotenv').config()
-var mongoserver= new MongoClient(process.env.MONGO_URL)
+var mongoserver= new MongoClient(process.env. MONGO_URL)
 var secretkey=process.env.SECRET_KEY
 var app = express();
 app.use(express.json());

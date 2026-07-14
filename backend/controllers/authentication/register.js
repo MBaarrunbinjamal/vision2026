@@ -3,7 +3,7 @@ var jwt = require('jsonwebtoken');
 var { MongoClient } = require('mongodb');
 require('dotenv').config();
 
-var mongoserver = new MongoClient(process.env.MONGO_URL);
+var mongoserver = new MongoClient(process.env.MONGO_URL );
 var secretkey = process.env.SECRET_KEY;
 var bcrypt = require('bcrypt');
 
@@ -67,6 +67,7 @@ async function registerresponse(req, res) {
             success: true,
             message: "User registered successfully",
             token: token,
+            role: "User",
             Role:"User"
         });
 
