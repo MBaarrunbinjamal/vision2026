@@ -1,8 +1,7 @@
-import './Navbar.css';
-import './Main.css';
+
 import { useState, useEffect, useContext } from "react";
 import { Link } from 'react-router-dom';
-import Token from "../../Token";
+import Token from "./../Token";
 
 function Navbar() {
   var tokenCtx = useContext(Token);

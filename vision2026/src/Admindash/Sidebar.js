@@ -1,29 +1,28 @@
-import './Ad.css';
 function Sidebar() {
-  return (
-    // <!-- ════════════════ SIDEBAR ════════════════ -->
+    return (
+        // <!-- ════════════════ SIDEBAR ════════════════ -->
 <aside className="sidebar" id="sidebar">
 
-  {/* // <!-- Logo --> */}
+  {/* <!-- Logo --> */}
   <div className="sidebar-logo">
     <div className="logo-mark">
       <div className="logo-hex">NX</div>
       <div>
-        <div className="logo-text">NEXUSSS</div>
+        <div className="logo-text">C▸DEX</div>
         <div className="logo-sub">ADMIN CONTROL</div>
       </div>
     </div>
   </div>
 
-  {/* <!-- Navigation --> */}
+ 
   <nav className="sidebar-nav">
 
     <div className="nav-group-label">COMMAND CENTER</div>
 
     <div className="nav-item">
-      <a href="/admin" className="nav-link-custom active">
+      <a href="#" className="nav-link-custom active">
         <i className="bi bi-grid-1x2 nav-icon"></i>
-        Dashboard 
+        Dashboard
       </a>
     </div>
     <div className="nav-item">
@@ -115,14 +114,17 @@ function Sidebar() {
         <div className="admin-name">Zara Aziz</div>
         <div className="admin-role">SUPER ADMIN</div>
       </div>
-      <a href="#" className="ms-auto" style={{color: "var(--text-dim)", fontSize: "16px", textDecoration: "none"}}>
+      <a href="#" className="ms-auto" style={{
+  color: "var(--text-dim)",
+  fontSize: "16px",
+  textDecoration: "none"
+}}>
         <i className="bi bi-three-dots-vertical"></i>
       </a>
     </div>
   </div>
 
 </aside>
-
-  );
+    );
 }
 export default Sidebar;

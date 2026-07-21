@@ -1,5 +1,5 @@
 import "./Login.css";
-import './Main.css';
+
 import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {

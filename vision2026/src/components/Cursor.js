@@ -1,6 +1,3 @@
-import './Cursor.css'; 
-import './Main.css';
-
 function Cursor() {
     return (
         <>

@@ -1,5 +1,4 @@
-import './Hero.css';
-import './Main.css';
+
 function Hero() {
   return (
    <>

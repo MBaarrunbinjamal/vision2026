@@ -1,5 +1,5 @@
 import './Register.css';
-import './Main.css';
+
 import { Link, useNavigate } from 'react-router-dom';
 import React from 'react';
 

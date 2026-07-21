@@ -1,7 +1,6 @@
-import './Ad.css';
-function Nav() {
+function Topbar() {
     return (
-    //    <!-- ════════════════ TOPBAR ════════════════ -->
+        // <!-- ════════════════ TOPBAR ════════════════ -->
 <header className="topbar">
   <button className="menu-toggle" id="menuToggle" onclick="toggleSidebar()">
     <i className="bi bi-layout-sidebar"></i>
@@ -33,5 +32,4 @@ function Nav() {
 
     );
 }
-
-export default Nav;
+export default Topbar;
