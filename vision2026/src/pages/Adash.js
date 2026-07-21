@@ -1,5 +1,5 @@
 import "../Admindash/Admin.css";
-import Bg from "../components/Bg";
+import Bg from "../Admindash/Bg";
 import Sidebar from "../Admindash/Sidebar";
 import Topbar from "../Admindash/Topbar";
 import Pgheader from "../Admindash/Pgheader";

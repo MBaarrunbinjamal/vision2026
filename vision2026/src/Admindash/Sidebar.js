@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 function Sidebar({ isOpen, closeSidebar }) {
   return (
@@ -56,9 +58,9 @@ function Sidebar({ isOpen, closeSidebar }) {
 
           <div className="nav-item">
 
-            <a
-              href="#"
-              className="nav-link-custom active"
+            <Link
+              to="/admin"
+              className="nav-link-custom"
               onClick={closeSidebar}
             >
 
@@ -66,7 +68,7 @@ function Sidebar({ isOpen, closeSidebar }) {
 
               Dashboard
 
-            </a>
+            </Link>
 
           </div>
 
@@ -266,8 +268,8 @@ function Sidebar({ isOpen, closeSidebar }) {
 
           <div className="nav-item">
 
-            <a
-              href="#"
+            <Link
+              to="/addevent"
               className="nav-link-custom"
               onClick={closeSidebar}
             >
@@ -276,7 +278,7 @@ function Sidebar({ isOpen, closeSidebar }) {
 
               Events
 
-            </a>
+            </Link>
 
           </div>
 

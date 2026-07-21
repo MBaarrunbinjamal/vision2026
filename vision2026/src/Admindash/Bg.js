@@ -3,7 +3,7 @@ function Bg() {
     <>
       <canvas id="neural-canvas"></canvas>
 
-      <div className="scanlines"></div>
+      {/* <div className="scanlines"></div> */}
     </>
   );
 }

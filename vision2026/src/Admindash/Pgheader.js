@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 function Pgheader() {
+  const navigate = useNavigate();
   return (
 //    <!-- Page Header -->
   <div className="page-header d-flex flex-wrap align-items-start justify-content-between gap-3">
@@ -19,7 +21,12 @@ function Pgheader() {
     </div>
     <div className="d-flex gap-2 flex-wrap">
       <button className="btn-glow outline"><i className="bi bi-download"></i> Export</button>
-      <button className="btn-glow violet"><i className="bi bi-plus-lg"></i> New Event</button>
+      <button
+      className="btn-glow violet"
+      onClick={() => navigate("/addevent")}
+    >
+      <i className="bi bi-plus-lg"></i> New Event
+    </button>
     </div>
   </div>
   );
