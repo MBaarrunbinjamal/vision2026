@@ -342,3 +342,128 @@
 
 
 }
+
+/* =========================================
+   FLOATING BACK TO HOME BUTTON
+========================================= */
+
+.back-home-btn {
+
+    position: fixed;
+
+    top: 100px;
+    left: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    background: rgba(13, 0, 32, 0.75);
+
+    border: 1px solid rgba(0, 245, 255, 0.35);
+
+    color: #00f5ff;
+
+    font-family: 'Share Tech Mono', monospace;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.12em;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 0 15px rgba(0, 245, 255, 0.12);
+
+    clip-path:
+        polygon(
+            0 0,
+            calc(100% - 10px) 0,
+            100% 10px,
+            100% 100%,
+            10px 100%,
+            0 calc(100% - 10px)
+        );
+
+    transition: all 0.3s ease;
+
+    z-index: 1000;
+
+}
+
+
+/* Arrow */
+
+.back-icon {
+
+    font-size: 1.2rem;
+
+    line-height: 1;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+/* Hover */
+
+.back-home-btn:hover {
+
+    color: #ffffff;
+
+    border-color: #00f5ff;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 245, 255, 0.15),
+            rgba(179, 0, 255, 0.2)
+        );
+
+    box-shadow:
+        0 0 20px rgba(0, 245, 255, 0.4),
+        0 0 40px rgba(179, 0, 255, 0.2);
+
+    transform: translateX(5px);
+
+}
+
+
+.back-home-btn:hover .back-icon {
+
+    transform: translateX(-4px);
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .back-home-btn {
+
+        top: 80px;
+
+        left: 15px;
+
+        padding: 10px 14px;
+
+        font-size: 0.65rem;
+
+    }
+
+    .back-icon {
+
+        font-size: 1rem;
+
+    }
+
+}
