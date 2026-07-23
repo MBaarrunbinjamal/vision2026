@@ -36,9 +36,29 @@ async function addEvent(req, res) {
 
     }
 }
+async function getEvents(req, res) {
+    try {
+
+        const events = await db.collection("events").find().toArray();
+
+        res.json({
+            success: true,
+            events: events
+        });
+
+    } catch (err) {
+
+        res.status(500).json({
+            success: false,
+            message: err.message
+        });
+
+    }
+}
 
 
 module.exports={
     getdata,
-    addEvent
+    addEvent,
+    getEvents
 }
