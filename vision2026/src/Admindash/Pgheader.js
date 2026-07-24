@@ -6,7 +6,7 @@ function Pgheader() {
   <div className="page-header d-flex flex-wrap align-items-start justify-content-between gap-3">
     <div>
       <div className="breadcrumb-custom mb-2">
-        <span>NEXUS</span><span className="sep">/</span>
+        <span>C▸DEX</span><span className="sep">/</span>
         <span>COMMAND</span><span className="sep">/</span>
         <span className="current">DASHBOARD</span>
       </div>
