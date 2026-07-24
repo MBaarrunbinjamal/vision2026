@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 function EventDetails() {
 
-    const { id } = useParams();
+    const { id } = useParams(); 
 
     const [event, setEvent] = useState(null);
     const [loading, setLoading] = useState(true);

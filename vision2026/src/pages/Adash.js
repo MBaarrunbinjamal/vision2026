@@ -1,5 +1,5 @@
 import "../Admindash/Admin.css";
-import Bg from "../Admindash/Bg";
+// import Bg from "../Admindash/Bg";
 import Sidebar from "../Admindash/Sidebar";
 import Topbar from "../Admindash/Topbar";
 import Pgheader from "../Admindash/Pgheader";
@@ -22,7 +22,7 @@ function Adash  (){
     return(
         <main className="main">
 
-        <Bg />
+        {/* <Bg /> */}
         <NeuralCanvas />
         <Sidebar />
         <Topbar />

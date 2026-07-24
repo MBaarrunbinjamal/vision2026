@@ -19,6 +19,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Adash from "./pages/Adash";
 
+
 function App() {
   useGlobalEffects(); 
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/login"element={<Login/>}/>
           <Route path="/register" element={<Register />} />
           <Route path="/addevent" element={<AddEvent />} />
+          
         </Routes>
       </Token.Provider>
       

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import useAdminDashboard from "../hooks/useAdminDashboard";
-import Bg from "./Bg";
+// import useAdminDashboard from "../hooks/useAdminDashboard";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
+import NeuralCanvas from "./NeuralCanvas";
 
 function AddEvent() {
   // Start all dashboard JavaScript effects
-    useAdminDashboard();
+    // useAdminDashboard();
 
 
   // =========================================
@@ -114,7 +114,8 @@ function AddEvent() {
   return (
 
     <>
-     <Bg />
+    
+    <NeuralCanvas />
 
       {/* =========================================
           SIDEBAR
